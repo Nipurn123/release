@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  code-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ${HOME}:/home/coder/workspace
+    environment:
+      - AUTH=none
+      - DISABLE_TELEMETRY=1
+    restart: unless-stopped 

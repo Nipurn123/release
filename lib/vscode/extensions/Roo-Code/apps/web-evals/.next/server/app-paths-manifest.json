@@ -1,0 +1,9 @@
+{
+  "/api/health/route": "app/api/health/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/runs/[id]/stream/route": "app/api/runs/[id]/stream/route.js",
+  "/runs/[id]/page": "app/runs/[id]/page.js",
+  "/runs/new/page": "app/runs/new/page.js",
+  "/page": "app/page.js"
+}

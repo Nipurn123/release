@@ -1,0 +1,9 @@
+{
+  "/api/health/route": "/api/health",
+  "/favicon.ico/route": "/favicon.ico",
+  "/_not-found/page": "/_not-found",
+  "/api/runs/[id]/stream/route": "/api/runs/[id]/stream",
+  "/runs/[id]/page": "/runs/[id]",
+  "/runs/new/page": "/runs/new",
+  "/page": "/"
+}

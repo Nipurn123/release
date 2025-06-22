@@ -1,0 +1,247 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for Users/nipurnagarwal/Desktop/100XPrompt_agent/code-server/lib/vscode/extensions/cline/src/core/tools/browserActionTool.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../../../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../../../../../../../../index.html">All files</a> / <a href="index.html">Users/nipurnagarwal/Desktop/100XPrompt_agent/code-server/lib/vscode/extensions/cline/src/core/tools</a> browserActionTool.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">16.66% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>9/54</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">16.66% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>9/54</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ToolDefinition } from "@core/prompts/model_prompts/jsonToolToXml"
+import { BrowserSettings } from "@shared/BrowserSettings"
+&nbsp;
+export const browserActionToolName = "BrowserAction"
+&nbsp;
+const descriptionForAgent = <span class="fstat-no" title="function not covered" >(</span>
+<span class="cstat-no" title="statement not covered" >	browserSettings: BrowserSettings,</span>
+<span class="cstat-no" title="statement not covered" >) =&gt; `Request to interact with a Puppeteer-controlled browser. Every action, except \`close\`, will be responded to with a screenshot of the browser's current state, along with any new console logs. You may only perform one browser action per message, and wait for the user's response including a screenshot and logs to determine the next action.</span>
+<span class="cstat-no" title="statement not covered" >- The sequence of actions **must always start with** launching the browser at a URL, and **must always end with** closing the browser. If you need to visit a new URL that is not possible to navigate to from the current webpage, you must first close the browser, then launch again at the new URL.</span>
+<span class="cstat-no" title="statement not covered" >- While the browser is active, only the \`${browserActionToolName}\` tool can be used. No other tools should be called during this time. You may proceed to use other tools only after closing the browser. For example if you run into an error and need to fix a file, you must close the browser, then use other tools to make the necessary changes, then re-launch the browser to verify the result.</span>
+<span class="cstat-no" title="statement not covered" >- The browser window has a resolution of **${browserSettings.viewport.width}x${browserSettings.viewport.height}** pixels. When performing any click actions, ensure the coordinates are within this resolution range.</span>
+- Before clicking on any elements such as icons, links, or buttons, you must consult the provided screenshot of the page to determine the coordinates of the element. The click should be targeted at the **center of the element**, not on its edges.`
+&nbsp;
+export const browserActionToolDefinition = <span class="fstat-no" title="function not covered" >(browserSettings: BrowserSettings): ToolDefinition =&gt; ({</span>
+<span class="cstat-no" title="statement not covered" >	name: browserActionToolName,</span>
+<span class="cstat-no" title="statement not covered" >	descriptionForAgent: descriptionForAgent(browserSettings),</span>
+<span class="cstat-no" title="statement not covered" >	inputSchema: {</span>
+<span class="cstat-no" title="statement not covered" >		type: "object",</span>
+<span class="cstat-no" title="statement not covered" >		properties: {</span>
+<span class="cstat-no" title="statement not covered" >			action: {</span>
+<span class="cstat-no" title="statement not covered" >				type: "string",</span>
+<span class="cstat-no" title="statement not covered" >				description: `The action to perform. The available actions are:</span>
+<span class="cstat-no" title="statement not covered" >* launch: Launch a new Puppeteer-controlled browser instance at the specified URL. This **must always be the first action**.</span>
+<span class="cstat-no" title="statement not covered" >    - Use with the \`url\` parameter to provide the URL.</span>
+<span class="cstat-no" title="statement not covered" >    - Ensure the URL is valid and includes the appropriate protocol (e.g. http://localhost:3000/page, file:///path/to/file.html, etc.)</span>
+<span class="cstat-no" title="statement not covered" >* click: Click at a specific x,y coordinate.</span>
+<span class="cstat-no" title="statement not covered" >    - Use with the \`coordinate\` parameter to specify the location.</span>
+<span class="cstat-no" title="statement not covered" >    - Always click in the center of an element (icon, button, link, etc.) based on coordinates derived from a screenshot.</span>
+<span class="cstat-no" title="statement not covered" >* type: Type a string of text on the keyboard. You might use this after clicking on a text field to input text.</span>
+<span class="cstat-no" title="statement not covered" >    - Use with the \`text\` parameter to provide the string to type.</span>
+<span class="cstat-no" title="statement not covered" >* scroll_down: Scroll down the page by one page height.</span>
+<span class="cstat-no" title="statement not covered" >* scroll_up: Scroll up the page by one page height.</span>
+<span class="cstat-no" title="statement not covered" >* close: Close the Puppeteer-controlled browser instance. This **must always be the final browser action**.</span>
+<span class="cstat-no" title="statement not covered" >    - Example: \`&lt;action&gt;close&lt;/action&gt;\``,</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >			url: {</span>
+<span class="cstat-no" title="statement not covered" >				type: "string",</span>
+<span class="cstat-no" title="statement not covered" >				description: `Use this for providing the URL for the \`launch\` action.</span>
+<span class="cstat-no" title="statement not covered" >Example: &lt;url&gt;https://example.com&lt;/url&gt;`,</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >			coordinate: {</span>
+<span class="cstat-no" title="statement not covered" >				type: "string",</span>
+<span class="cstat-no" title="statement not covered" >				description: `The X and Y coordinates for the \`click\` action. Coordinates should be within the **${browserSettings.viewport.width}x${browserSettings.viewport.height}** resolution.</span>
+<span class="cstat-no" title="statement not covered" >Example: &lt;coordinate&gt;450,300&lt;/coordinate&gt;`,</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >			text: {</span>
+<span class="cstat-no" title="statement not covered" >				type: "string",</span>
+<span class="cstat-no" title="statement not covered" >				description: `Use this for providing the text for the \`type\` action.</span>
+<span class="cstat-no" title="statement not covered" >Example: &lt;text&gt;Hello, world!&lt;/text&gt;`,</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		required: ["action"],</span>
+<span class="cstat-no" title="statement not covered" >	},</span>
+<span class="cstat-no" title="statement not covered" >})</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-06-11T15:11:48.959Z
+            </div>
+        <script src="../../../../../../../../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../../../../../../../../sorter.js"></script>
+        <script src="../../../../../../../../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

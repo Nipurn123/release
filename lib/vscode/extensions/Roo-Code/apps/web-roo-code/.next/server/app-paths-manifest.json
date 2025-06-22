@@ -1,0 +1,8 @@
+{
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/enterprise/page": "app/enterprise/page.js",
+  "/evals/page": "app/evals/page.js",
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js"
+}
